@@ -1,0 +1,26 @@
+<view>
+  <view class='top'>
+      <image src='{{logo}}' class='logo'></image>  
+     <!-- <view class='ic' bindtap='getFilter'>搜索</view>  -->
+    <input type='text' placeholder='请输入要搜索的内容' class='search' bindinput="bindKeyInput" ></input>
+  </view>
+  <view class='list'>
+    <view class='oneArt' wx:for="{{articalList}}" wx:key="{{index}}" bindtap='toDetail' data-index="{{index}}">
+      <view class='onetop'>
+        <text class="oneLeft">{{item.title}}</text>
+        <text class='oneRight'>{{item.publicTime}}</text>
+      </view>
+       <!-- <text>{{item.intro}}</text> -->
+      <view class='onecontent'>
+        <text> 类型： {{item.categoryName}} </text>
+        <text>浏览： {{item.meta.views}}</text>
+        <text> 评论： {{item.meta.comments}}</text>
+      </view>
+    </view>
+  </view>
+
+  <view wx:if="{{condition}}" class='nothing'>
+    <text>暂无数据</text>
+  </view>
+  
+</view>

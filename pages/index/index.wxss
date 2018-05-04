@@ -1,0 +1,80 @@
+.top {
+  width: 100%;
+  height: 74rpx;
+  line-height: 100rpx;
+  box-sizing: border-box;
+  padding: 0 20rpx;
+}
+
+.logo {
+  width: 120rpx;
+  height: 74rpx;
+}
+
+.search {
+  float: right;
+  width: 260rpx;
+  height: 70rpx;
+  border: 2rpx solid #ccc;
+  border-radius: 8rpx;
+  font-size: 24rpx;
+  padding-left: 20rpx;
+}
+
+.ic {
+  float: right;
+  text-align: center;
+  line-height: 1;
+  border: 2rpx solid #1296db;
+  padding: 20rpx 30rpx;
+  background: #1296db;
+  color: #fff;
+  border-radius: 8rpx;
+  font-size: 28rpx;
+}
+
+
+.list {
+  padding: 0 20rpx;
+  margin-top: 40rpx;
+}
+
+.oneArt {
+  width: 100%;
+  height: 200rpx;
+  border-bottom: 2rpx dashed #ccc;
+}
+
+.onetop {
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 28rpx;
+}
+
+.oneLeft {
+  float: left;
+  font-weight: bold;
+  color: #333;
+}
+
+.oneRight {
+  float: right;
+  color: #999;
+}
+
+.onecontent {
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 24rpx;
+}
+
+.onecontent text {
+  display: inline-block;
+  width: 23%;
+}
+
+.nothing {
+  text-align:center;
+  padding-top: 200rpx;
+  color: #ccc;
+}
