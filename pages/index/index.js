@@ -11,6 +11,9 @@ Page({
     keyword: ''
   },
   onLoad: function () {
+    wx.setNavigationBarTitle({
+      title: '首页'
+    })
     this.getArticalList();
   },
   getArticalList: function () {
@@ -23,6 +26,7 @@ Page({
         self.setData({
           articalList: res.data.result.list.map(item => ({
             ...item,
+            titles: (item.title.length > 17 )? (item.title.substring(0, 17) + '...') : (item.title),
             intro: item.content.substring(0, 50),
             publicTime: item.update_at.split("T", 1)
           }))

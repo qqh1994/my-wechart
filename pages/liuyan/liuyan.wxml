@@ -1,2 +1,40 @@
-<!--pages/liuyan/liuyan.wxml-->
-<text>pages/liuyan/liuyan.wxml</text>
+<view class="liuyan">
+
+  <view class='lists'>
+    <view class='oneUser' wx:for="{{messageList}}" wx:key="{{index}}">
+
+        <view class='left'>
+           <image src="{{item.userFace}}"></image> 
+        </view>
+
+        <view class='right'>
+          <view class='right-top'>
+            <text>{{item.name}}</text>
+             <text>{{item.publichDate}}</text> 
+          </view>
+           
+           <view class='content'>{{item.content}}</view>
+           <view class='replyContent'>
+              <view wx:for="{{item.replyList}}" wx:for-item="items" wx:for-index="idx"  wx:key="idxs" class='onereply'>
+                <text class='ora'>{{items.re_name}}</text>
+                回复
+                <text class='ora'>{{items.be_name}}</text>:
+
+                <view class='replyC'>{{items.content}}</view>
+
+                 <view wx:if="{{items.replyList[0]}}">
+                    <view wx:for="{{item.replyList}}" wx:for-index="idxs" wx:key="idxs" wx:for-item="itemss" class='onereply'>
+                       <text class='ora'>{{itemss.re_name}}</text>
+                        回复
+                        <text class='ora'>{{itemss.be_name}}</text>:
+
+                        <view class='replyC'>{{itemss.content}}</view>
+                    </view>
+                 </view> 
+              </view>
+           </view>
+        </view>
+      </view>
+
+  </view>
+</view>

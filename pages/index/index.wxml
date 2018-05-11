@@ -7,7 +7,7 @@
   <view class='list'>
     <view class='oneArt' wx:for="{{articalList}}" wx:key="{{index}}" bindtap='toDetail' data-index="{{index}}">
       <view class='onetop'>
-        <text class="oneLeft">{{item.title}}</text>
+        <text class="oneLeft">{{item.titles}}</text>
         <text class='oneRight'>{{item.publicTime}}</text>
       </view>
        <!-- <text>{{item.intro}}</text> -->

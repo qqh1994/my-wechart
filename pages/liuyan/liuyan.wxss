@@ -1,1 +1,76 @@
 /* pages/liuyan/liuyan.wxss */
+
+.lists {
+  padding: 20rpx;
+}
+.oneUser {
+  display: flex;
+  background: #F6F8F8;
+  width: 100%;
+  margin-bottom: 40rpx;
+  padding: 40rpx 20rpx;
+}
+
+.left {
+  width: 140rpx;
+  /* height: 100%; */
+  text-align: center;
+}
+
+.left image {
+  width: 100rpx;
+  height: 100rpx;
+  vertical-align: top; 
+  border-radius: 50%;
+}
+
+.right {
+  width: calc(100% - 180rpx);
+  height: 100%;
+}
+.right-top {
+  display: block;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.right-top text:first-child {
+  float: left;
+  color: orange;
+  font-size: 28rpx;
+}
+
+.right-top text:last-child {
+  float: right;
+  color: #ccc;
+  font-size: 24rpx;
+}
+
+.content {
+  font-size: 28rpx;
+}
+
+.more {
+  width: 100%;
+  text-align: right;
+}
+
+.more image {
+  width: 16px !important;
+  height: 16px !important;
+}
+
+.onereply {
+  font-size: 24rpx;
+}
+
+.ora {
+  color: orange;
+}
+
+.replyC {
+  margin-top: 20rpx;
+}
+
+.replyContent {
+  margin-top: 20rpx;
+}
