@@ -9,9 +9,9 @@
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "",
-    "navigationBarTextStyle":"black"
+    "navigationBarBackgroundColor": "#1296db",
+    "navigationBarTitleText": "JSAN",
+    "navigationBarTextStyle":"#fff"
   },
   "tabBar": {
     "selectedColor": "#1296db",

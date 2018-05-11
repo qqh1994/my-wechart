@@ -11,9 +11,9 @@ Page({
     keyword: ''
   },
   onLoad: function () {
-    wx.setNavigationBarTitle({
-      title: '首页'
-    })
+    // wx.setNavigationBarTitle({
+    //   title: '首页'
+    // })
     this.getArticalList();
   },
   getArticalList: function () {

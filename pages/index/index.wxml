@@ -1,6 +1,6 @@
 <view>
   <view class='top'>
-      <image src='{{logo}}' class='logo'></image>  
+      <!-- <image src='{{logo}}' class='logo'></image>   -->
      <!-- <view class='ic' bindtap='getFilter'>搜索</view>  -->
     <input type='text' placeholder='请输入要搜索的内容' class='search' bindinput="bindKeyInput" ></input>
   </view>

@@ -4,6 +4,7 @@
   line-height: 100rpx;
   box-sizing: border-box;
   padding: 0 20rpx;
+  margin-top: 20rpx;
 }
 
 .logo {
@@ -12,8 +13,8 @@
 }
 
 .search {
-  float: right;
-  width: 260rpx;
+  /* width: 260rpx; */
+  width: calc(100% - 40rpx);
   height: 70rpx;
   border: 2rpx solid #ccc;
   border-radius: 8rpx;
@@ -21,17 +22,6 @@
   padding-left: 20rpx;
 }
 
-.ic {
-  float: right;
-  text-align: center;
-  line-height: 1;
-  border: 2rpx solid #1296db;
-  padding: 20rpx 30rpx;
-  background: #1296db;
-  color: #fff;
-  border-radius: 8rpx;
-  font-size: 28rpx;
-}
 
 
 .list {
