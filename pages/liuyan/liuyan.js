@@ -26,7 +26,7 @@ Page({
       method: 'GET',
       success: function (res) {
         self.setData({
-          messageList: (res.data.result.list || []).map(item  => ({
+          messageList: (res.data.result.list || []).map(item => ({
             ...item,
             publichDate: item.create_at.split('T', 1)
           }))

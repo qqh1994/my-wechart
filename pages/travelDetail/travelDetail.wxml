@@ -1,0 +1,37 @@
+<view class="travelDetail">
+  <image src='{{detailInfo.thumb}}' class='imgs'></image>
+
+  <view class='content'>
+    <text class='title'>{{detailInfo.title}}</text>
+
+
+    <view class='one'>
+      <view class='tip'>景点介绍：</view>
+      <view class='tipright'>{{detailInfo.other}}</view>
+    </view>
+    <view class='one'>
+      <view class='tip'>花费时长：</view>
+      <view class='tipright'>{{detailInfo.cycle}}天</view>
+    </view>
+    <view class='one'>
+      <view class='tip'>特色美食：</view>
+      <view class='tipright'>{{detailInfo.eat}}</view>
+    </view>
+    <view class='one'>
+      <view class='tip'>旅游景点：</view>
+      <view class='tipright'>
+        <view wx:for="{{list}}" wx:key="{{index}}">
+          <view class='smallTitle'>{{item.name}}</view>
+          <view class='smallImg'>
+            <image wx:for="{{item.images}}" wx:for-item="items" wx:for-index="ind" wx:key="ind" src='{{items.url}}'></image>
+          </view>
+          <view class='smallContent'>{{item.content}}</view>
+        </view>
+      </view>
+    </view>
+    <view class='one'>
+      <view class='tip'>注意事项：</view>
+      <view class='tipright'>{{detailInfo.carry}}</view>
+    </view>
+  </view>
+</view>

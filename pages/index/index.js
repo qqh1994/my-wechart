@@ -6,9 +6,6 @@ Page({
   data: {
     search: "/pages/images/search.png",
     logo: "/images/logo.png",
-    articalList: [],
-    condition: true,
-    keyword: ''
   },
   onLoad: function () {
     // wx.setNavigationBarTitle({
@@ -24,9 +21,9 @@ Page({
       method: 'GET',
       success: function (res) {
         self.setData({
-          articalList: res.data.result.list.map(item => ({
+          articalList: (res.data.result.list || []).map(item => ({
             ...item,
-            titles: (item.title.length > 17 )? (item.title.substring(0, 17) + '...') : (item.title),
+            titles: (item.title.length > 17) ? (item.title.substring(0, 17) + '...') : (item.title),
             intro: item.content.substring(0, 50),
             publicTime: item.update_at.split("T", 1)
           }))
@@ -54,10 +51,28 @@ Page({
       url: '/pages/detail/detail?id=' + id
     })
   },
-  bindKeyInput: function (e) {
+  showInput: function () {
+    this.setData({
+      inputShowed: true
+    });
+  },
+  hideInput: function () {
+    this.setData({
+      keyword: "",
+      inputShowed: false
+    });
+    this.getArticalList();
+  },
+  clearInput: function () {
+    this.setData({
+      keyword: ""
+    });
+    this.getArticalList();
+  },
+  inputTyping: function (e) {
     this.setData({
       keyword: e.detail.value
-    })
-    this.getArticalList()
+    });
+    this.getArticalList();
   }
 })

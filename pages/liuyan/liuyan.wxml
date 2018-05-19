@@ -15,7 +15,7 @@
            
            <view class='content'>{{item.content}}</view>
            <view class='replyContent'>
-              <view wx:for="{{item.replyList}}" wx:for-item="items" wx:for-index="idx"  wx:key="idxs" class='onereply'>
+              <view wx:for="{{item.replyList}}" wx:for-item="items" wx:for-index="idxs"  wx:key="idxs" class='onereply'>
                 <text class='ora'>{{items.re_name}}</text>
                 回复
                 <text class='ora'>{{items.be_name}}</text>:

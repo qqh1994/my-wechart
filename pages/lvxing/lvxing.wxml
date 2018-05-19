@@ -1,2 +1,10 @@
-<!--pages/lvxing/lvxing.wxml-->
-<text>pages/lvxing/lvxing.wxml</text>
+<view class="lvxing">
+
+  <view class="oneLx" wx:for="{{travelList}}" wx:for-index="ind" wx:key="ind">
+    <text class='title'>{{item.title}}</text>
+    <image src='{{item.thumb}}'></image>
+    <text class='tip'>{{item.content}}</text>
+    <text class='more' bindtap='toDetail' data-index="{{item._id}}">查看详情 ></text>
+  </view>
+
+</view>

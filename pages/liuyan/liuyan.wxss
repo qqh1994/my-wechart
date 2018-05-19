@@ -3,9 +3,10 @@
 .lists {
   padding: 20rpx;
 }
+
 .oneUser {
   display: flex;
-  background: #F6F8F8;
+  background: #f6f8f8;
   width: 100%;
   margin-bottom: 40rpx;
   padding: 40rpx 20rpx;
@@ -20,7 +21,7 @@
 .left image {
   width: 100rpx;
   height: 100rpx;
-  vertical-align: top; 
+  vertical-align: top;
   border-radius: 50%;
 }
 
@@ -28,11 +29,13 @@
   width: calc(100% - 180rpx);
   height: 100%;
 }
+
 .right-top {
   display: block;
   height: 80rpx;
   line-height: 80rpx;
 }
+
 .right-top text:first-child {
   float: left;
   color: orange;
@@ -60,7 +63,7 @@
 }
 
 .onereply {
-  font-size: 24rpx;
+  font-size: 12px;
 }
 
 .ora {

@@ -33,7 +33,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 1,
+			"current": -1,
 			"list": [
 				{
 					"id": -1,
@@ -45,6 +45,12 @@
 					"id": -1,
 					"name": "留言板",
 					"pathName": "pages/liuyan/liuyan",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "旅行",
+					"pathName": "pages/lvxing/lvxing",
 					"query": ""
 				}
 			]
