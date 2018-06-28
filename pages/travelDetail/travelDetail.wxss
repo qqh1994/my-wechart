@@ -1,6 +1,7 @@
 .imgs {
   width: 100%;
   height: 480rpx;
+  margin-top: 20px;
 }
 
 .content {
@@ -29,7 +30,7 @@
 .one .tip {
   display: inline-block;
   width: 60px;
-  color: #1296db;
+  color: #2959E9;
   vertical-align: top;
 }
 
@@ -63,4 +64,13 @@
 
 .smallContent {
   color: #999;
+}
+
+.page-section-gap{
+  box-sizing: border-box;
+  padding: 0 30rpx;
+}
+
+.page-body-button {
+  margin-bottom: 30rpx;
 }

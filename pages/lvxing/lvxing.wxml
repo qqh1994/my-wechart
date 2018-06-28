@@ -1,10 +1,14 @@
 <view class="lvxing">
 
+   <!-- <view class='change'>
+     <image src="{{isPlayingMusic ? '/images/music.png' : '/images/stop.png'}}" bindtap='onMusicTap' class='music'></image> 
+   </view>  -->
+
   <view class="oneLx" wx:for="{{travelList}}" wx:for-index="ind" wx:key="ind">
     <text class='title'>{{item.title}}</text>
     <image src='{{item.thumb}}'></image>
     <text class='tip'>{{item.content}}</text>
-    <text class='more' bindtap='toDetail' data-index="{{item._id}}">查看详情 ></text>
+    <text class='more' bindtap='toDetail' data-index="{{item}}">查看详情 ></text>
   </view>
 
 </view>

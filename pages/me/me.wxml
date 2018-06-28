@@ -1,2 +1,133 @@
-<!--pages/me/me.wxml-->
-<text>pages/me/me.wxml</text>
+<view>
+  <view class="top">
+    <view>
+      <image src='/images/head.jpg' class='head'></image>
+    </view>
+    <text class='name'>王晨鹏</text>
+    <view>
+      <text class='job'>前端工程师</text>
+    </view>
+    <view class='dialog'>
+      <view class='one' catchtap='toMyDic'>
+         <image src='/images/artical.png'></image> 
+        <text class="{{index === 0 ? 'isCheck' : ''}}">个人简介</text>
+      </view>
+      <view class='one' catchtap='toWorkSkill'>
+        <image src='/images/artical.png'></image> 
+        <text class="{{index === 1 ? 'isCheck' : ''}}">工作技能</text>
+      </view>
+      <view class='one' catchtap='toProjectExp'>
+        <image src='/images/artical.png'></image> 
+        <text class="{{index === 2 ? 'isCheck' : ''}}">项目经验</text>
+      </view>
+      <view class='one' catchtap='toWorkExp'>
+        <image src='/images/artical.png'></image> 
+        <text class="{{index === 3 ? 'isCheck' : ''}}">工作经历</text>
+      </view>
+    </view>
+
+    <view class='content' wx:if="{{index === 0}}">
+      <view class='info'>
+        <text class='line'></text>
+        <text class='te'>基本信息</text>
+        <text class='line'></text>
+      </view>
+
+      <view class='detail'>
+        <view class='left'>
+          <view>姓名：王晨鹏</view>
+          <view>出生日期：1995-05</view>
+          <view>博客：http://jsan.top</view>
+        </view>
+        <view class='right'>
+          <view>性别：男</view>
+          <view>年龄：24</view>
+          <view>联系方式：18410079323</view>
+        </view>
+      </view>
+      <view class="disc">邮箱：18410079323@163.com</view>
+      <view class="disc">2年前端开发经验，一年半Vue实际项目开发经验。</view>
+
+      <view class='info' style='margin-top: 10px;'>
+        <text class='line'></text>
+        <text class='te'>自我介绍</text>
+        <text class='line'></text>
+      </view>
+      <view class='aboutMe'>
+        <text>
+          责任心强，工作认真，勤学好问，有较强的承压能力，善于与人沟通，期待与您共事！
+        </text>
+      </view>
+    </view>
+
+    <view class='content' wx:if="{{index === 1}}">
+      <view class='info'>
+        <text class='line'></text>
+        <text class='te'>我的技能</text>
+        <text class='line'></text>
+      </view>
+      <view class='skill'>
+        <view class='oneSkill' wx:for="{{mySkill}}" wx:key="{{index}}">
+          <text class='smallCircle'></text>
+          {{item.content}}
+        </view>
+      </view>
+    </view>
+
+    <view class='content' wx:if="{{index === 2}}">
+      <view class='info'>
+        <text class='line'></text>
+        <text class='te'>我的经验</text>
+        <text class='line'></text>
+      </view>
+      <view class='myExp'>
+        <view class='oneExp' wx:for="{{myExpList}}" wx:key="index">
+          <view class='oneLine'>
+            <text class='left'><text class='tit'>项目名称：</text>{{item.name}}</text>
+            <text style='display: inline-block;margin-left: 20px;'><text class='tit'>项目周期：</text>{{item.time}}</text>
+          </view>
+          <view class='oneLine' wx:if="{{item.address}}">
+            <text><text class='tit'>网站地址：</text>{{item.address}}</text>
+          </view>
+          <view class='oneLine'>
+            <text><text class='tit'>项目简介：</text>{{item.direction}}</text>
+          </view>
+          <view class='oneLine'>
+            <text class='tit'>技术要点：</text>
+            <view style="padding-left: 50px;" wx:for="{{item.list}}" wx:for-index="i" wx:for-item="isOne" wx:key="i">
+              <view>{{i}}、{{isOne.content}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+
+
+    <view class='content' wx:if="{{index === 3}}">
+      <view class='info'>
+        <text class='line'></text>
+        <text class='te'>我的经历</text>
+        <text class='line'></text>
+      </view>
+
+      <view class='_content'>
+        <view>
+          <text class='_company'>公司名称：</text>
+          北京怀教网络科技有限公司
+        </view>
+        <view>
+          <text class='_company'>职位名称：</text>
+          前端开发工程师
+        </view>
+        <view>
+          <text class='_company'>工作时间：</text>
+          2016/08-至今
+        </view>
+        <view>
+          <text class='_company'>行业类别：</text>
+          互联网/服务系统
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

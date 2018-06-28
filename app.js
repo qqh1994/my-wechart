@@ -35,6 +35,7 @@ App({
   },
   globalData: {
     userInfo: null,
-    service: 'http://jsan.top:8000/api'
+    service: 'https://jsan.top:8000/api',
+    douban: 'https://api.douban.com'
   }
 })

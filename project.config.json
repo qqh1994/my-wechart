@@ -52,6 +52,24 @@
 					"name": "旅行",
 					"pathName": "pages/lvxing/lvxing",
 					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的",
+					"pathName": "pages/me/me",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "专业技能",
+					"pathName": "pages/workSkill/workSkill",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "电影",
+					"pathName": "pages/movies/movies",
+					"query": ""
 				}
 			]
 		}

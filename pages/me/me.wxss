@@ -1,1 +1,180 @@
 /* pages/me/me.wxss */
+
+.head {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+
+.top {
+  display: flex;
+  width: 100%;
+  height: 220px;
+  background: #2959E9;
+  flex-direction: column;
+  text-align: center;
+}
+
+.name {
+  color: white;
+  font-size: 12px;
+  margin: 10px 0;
+}
+
+.job {
+  padding: 4px 8px;
+  background: -webkit-linear-gradient(orange, red);
+  background: -o-linear-gradient(orange, red);
+  background: -moz-linear-gradient(orange, red);
+  background: linear-gradient(orange, red);
+  color: white;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.dialog {
+  width: 90%;
+  box-sizing: border-box;
+  height: 110px;
+  background: #fff;
+  margin: 20px auto; 
+  border-radius: 20px;  
+  box-shadow: 3px 3px 3px 0 #ccc;
+  font-size: 12px;
+  color: #333; 
+  padding: 10px 20px;  
+}
+
+.dialog .one {
+  float: left; 
+  width: calc(calc(100% - 40px) / 4);
+  height: 90px;
+  margin-right: 10px;
+  /* border: 1px solid #ddd; */
+}
+
+.dialog .one:last-child {
+  margin-right: 0;
+}
+
+.one image {
+  width: calc(100% - 10px);
+  height: 120rpx;
+  margin-top: 4px;
+}
+
+.content {
+  box-sizing: border-box;
+  /* margin-top: 14px; */
+  padding: 0 10px;
+}
+
+.info {
+  height: 30px;
+  line-height: 30px;
+  font-size: 12px;
+}
+
+.info .te {
+  display: inline-block;
+  width: 90px;
+  color: #333;
+}
+
+.info .line {
+  display: inline-block;
+  height: 1px;
+  width: calc((100% - 90px) / 2);
+  border-top: 1px solid #888;
+  vertical-align: middle;
+}
+
+.detail {
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  color: #888;
+}
+
+.detail .left,.detail .right {
+  width: 50%;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.left view,.right view {
+  height: 30px;
+  line-height: 30px;
+}
+
+.disc {
+  width: 100%;
+  color: #888;
+  padding-left: 10px;
+  line-height: 30px;
+  font-size: 12px;
+  text-align: left;
+}
+
+
+.aboutMe {
+  text-align: left;
+  font-size: 12px;
+  color: #888;
+  padding-bottom: 20px;
+}
+
+.isCheck  {
+  color: #2959E9;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  background-color: #F9F9F9;
+}
+
+.oneSkill {
+  font-size: 12px;
+  text-align: left;
+  margin-bottom: 10px;
+  margin-top: 4px;
+}
+
+.smallCircle {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #999;
+  margin-right: 4px;
+}
+
+.myExp {
+  text-align: left;
+  font-size: 12px;
+}
+
+.myExp .oneExp {
+  background-color: #F9F9F9;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+ .myExp .oneExp .oneLine{
+  margin-bottom: 10px;
+} 
+
+.tit,._company {
+  color: #2959E9;
+}
+
+._content {
+  font-size: 12px;
+  text-align: left;
+}
+
+._company {
+  line-height: 40px;
+}

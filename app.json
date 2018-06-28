@@ -6,16 +6,21 @@
     "pages/liuyan/liuyan",
     "pages/me/me",
     "pages/detail/detail",
-    "pages/travelDetail/travelDetail"
+    "pages/travelDetail/travelDetail",
+    "pages/movies/movies",
+    "pages/movies/movie/movie-template",
+    "pages/movies/more-movie/more-movie",
+    "pages/movies/movie-grid/movie-grid",
+    "pages/movies/movie-detail/movie-detail"
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#1296db",
-    "navigationBarTitleText": "JSAN",
+    "navigationBarBackgroundColor": "#2959E9",
+    "navigationBarTitleText": "Jsan",
     "navigationBarTextStyle":"#fff"
   },
   "tabBar": {
-    "selectedColor": "#1296db",
+    "selectedColor": "#2959E9",
     "list": [
       {
         "pagePath": "pages/index/index",
@@ -34,6 +39,12 @@
         "text": "留言",
         "iconPath": "images/liuyan.png",
         "selectedIconPath": "images/liuyanLight.png"
+      },
+      {
+        "pagePath": "pages/movies/movies",
+        "text": "电影",
+        "iconPath": "images/movie.png",
+        "selectedIconPath": "images/movieLight.png"
       },
       {
         "pagePath": "pages/me/me",

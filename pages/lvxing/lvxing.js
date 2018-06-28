@@ -8,6 +8,7 @@ Page({
    */
   data: {
     travelList: []
+    // isPlayingMusic: false
   },
 
   onLoad: function (options) {
@@ -35,11 +36,34 @@ Page({
 
   // 查看详情
   toDetail: function (e) {
-    var index = e.currentTarget.dataset.index
+    var index = e.currentTarget.dataset.index._id
+    var latitude = e.currentTarget.dataset.index.position[1]
+    var longitude = e.currentTarget.dataset.index.position[0]
     wx.navigateTo({
-      url: '/pages/travelDetail/travelDetail?id=' + index
+      url: '/pages/travelDetail/travelDetail?id=' + index + '&latitude=' + latitude + '&longitude=' + longitude
     })
   }
+  // 音乐播放软件
+  // onMusicTap: function () {
+  //   var self = this
+  //   var isPlayingMusic = this.data.isPlayingMusic
+
+  //   if (isPlayingMusic) {
+  //     wx.pauseBackgroundAudio()
+  //     self.setData({
+  //       isPlayingMusic: false
+  //     })
+  //   } else {
+  //     wx.playBackgroundAudio({
+  //       dataUrl: 'http://ws.stream.qqmusic.qq.com/C100002mWVx72p8Ugp.m4a?fromtag=38',
+  //       title: '带你去旅行--校长',
+  //       coverImgUrl: 'http://qukufile2.qianqian.com/data2/pic/51677db1f7b51f1f1bacd1a2498665ff/190892/190892.jpg@s_1,w_150,h_150'
+  //     })
+  //     self.setData({
+  //       isPlayingMusic: true
+  //     })
+  //   }
+  // }
 
   // 显示模态窗口
   // getModel: function () {
